@@ -1,6 +1,8 @@
 Purpose
 -------
-Javascripts Math.random is not very random.  This library attempts to use the NodeJS crypto library to generate random numbers more randomly.  This has not been tested yet using an entropy validator but should be better then the normal randomness.
+Javascripts Math.random is not very random.  This library attempts to use the NodeJS crypto library to generate random numbers more randomly.
+
+According to ent the entropy of Node's Math.random is 3.304235.  Using this module the entropy is 3.451241.  I am not able to determine how much this is but atleast secure_random is better.  If anyone has ideas to improve the code or how to test it those would be greatly appreciated.
 
 Install
 -------
