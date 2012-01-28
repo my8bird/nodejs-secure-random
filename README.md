@@ -6,6 +6,7 @@ Install
 -------
     npm install secure_random
 or
+
     git clone git@github.com:my8bird/nodejs-secure-random.git
 
 Usage
