@@ -4,8 +4,8 @@ Javascripts Math.random is not very random.  This library attempts to use the No
 
 Install
 -------
-Since this module is not in NPM yet simply clone the repository and use it as you will
-
+    npm install secure_random
+or
     git clone git@github.com:my8bird/nodejs-secure-random.git
 
 Usage
