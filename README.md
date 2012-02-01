@@ -1,3 +1,6 @@
+[![Build Status](https://secure.travis-ci.org/my8bird/nodejs-secure-random.png?branch=master)](http://travis-ci.org/my8bird/nodejs-secure-random)
+
+
 Purpose
 -------
 Javascripts Math.random is not very random.  This library attempts to use the NodeJS crypto library to generate random numbers more randomly.  This has not been tested yet using an entropy validator but should be better then the normal randomness.

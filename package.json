@@ -4,6 +4,11 @@
   "author": "Nathan Landis <my8bird@gmail.com>",
   "version": "0.1.0",
   "main": "random",
+
+   "scripts": {
+      "test": "./node_modules/mocha/bin/mocha test_random.js"
+   },
+
   "dependencies": {
   },
   "devDependencies": {
