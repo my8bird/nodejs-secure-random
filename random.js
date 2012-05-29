@@ -24,10 +24,10 @@ function _parseArgs(arg_array) {
  * for an explaination of the modulo issue.
  */
 function _mapToRange(min, max, randUInt) {
-   var result_range = max - min,
+   var result_range = (max + 1) - min,
        factor = result_range / MaxUInt;
 
-   return Math.round((randUInt * factor) + min); // Math.round may cause some slight issues.
+   return ((randUInt * factor) + min) >> 0; // bitshifting by zero equates to Math.floor, albeit faster.
 }
 
 /*** Returns a random unsigned Int ***
