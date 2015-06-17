@@ -37,7 +37,7 @@ exports.getRandomInt = function(min, max, callback) {
    var args = _parseArgs(arguments), unsigned_int, rand_int;
 
    crypto.randomBytes(8, function(err, bytes_slow_buf) {
-      if (err) { return cb(err); }
+      if (err) { return args.cb(err); }
 
       unsigned_int = Buffer(bytes_slow_buf).readUInt32LE(0);
 
